@@ -205,7 +205,7 @@ var students = [
         gender: "male",
         department: "computer science",
         level: 300,
-        height: 6.0,
+        height: 6.5,
         grade: [89,56,34,23,11]
     },
     {
@@ -251,5 +251,21 @@ students.forEach(function(value){
     }
     // console.log(value.height);
 });
-console.log(max);
-    // var students = student.filter ((students)=> student.height)
+ console.log(max);
+//  function Student(n, a, m) {
+//     var name = n;
+//     var age = a;
+//     var marks = m;
+    
+//     var averageMarks = function() {
+//       var sum = 0;
+//       marks.forEach(function(m){
+//         sum += m;
+//       });
+//       return sum/marks.length;    
+//     }
+// this.printDetails = function() {
+//     console.log('Name: ' + name + ' age: ' + age + 'Address:' +address+ ());
+var studentA = students.filter ((student)=> student.height == max);
+
+console.log(studentA);
