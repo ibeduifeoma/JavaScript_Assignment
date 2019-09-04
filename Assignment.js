@@ -269,3 +269,27 @@ students.forEach(function(value){
 var studentA = students.filter ((student)=> student.height == max);
 
 console.log(studentA);
+
+// students.forEach(function(value){
+//     reduce ((w,x,y,z,n) => {w+x+y+z+n})
+//   Avg = students[0] grade.reduce((w,x,y,z,n)
+//     })
+
+// students[0] =  grade.lenght;
+// console.log(Avg);
+console.log(result)
+function avg(arr){
+	var num = 0;
+	for(var index = 0; index<arr.length; index++){
+		num = num + arr[index];
+	}
+	return num / arr.length;
+}
+var b = 0;
+var v;
+student.forEach(function(item,index,data)) {
+	if(b<avg(item.grade)){
+		b = avg(item.grade);
+
+	}
+});
