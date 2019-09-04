@@ -277,7 +277,7 @@ console.log(studentA);
 
 // students[0] =  grade.lenght;
 // console.log(Avg);
-console.log(result)
+//console.log(result)
 function avg(arr){
 	var num = 0;
 	for(var index = 0; index<arr.length; index++){
@@ -287,9 +287,12 @@ function avg(arr){
 }
 var b = 0;
 var v;
-student.forEach(function(item,index,data)) {
-	if(b<avg(item.grade)){
-		b = avg(item.grade);
 
-	}
+students.forEach(function(item,index,data){
+	if(b<avg(item.grade)){
+        b = avg(item.grade);
+        v= index;
+
+	} 
 });
+console.log(students[v]);
